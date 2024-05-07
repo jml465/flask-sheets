@@ -8,7 +8,7 @@ class Restaurants(BaseModel):
     COLUMNS = ["name", "cuisine", "star_rating", "neighborhood"]
 
     SEEDS = [
-        {"name": "La Grande Boucherie", "French": "", "star_rating": 4, "neighborhood": "Downtown"},
+        {"name": "La Grande Boucherie", "cuisine": "French", "star_rating": 4, "neighborhood": "Downtown"},
         {"name": "Jont", "cuisine": "French/Japanese", "star_rating": 5, "neighborhood": "U Street Corridor"},
         {"name": "Oyamel", "cuisine": "Meixcan", "star_rating": 4.5, "neighborhood": "Penn Quarter"},
         {"name": "Filomena", "cuisine": "Italian", "star_rating": 4.8, "neighborhood": "Georgetown"},
