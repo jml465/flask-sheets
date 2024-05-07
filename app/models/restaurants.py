@@ -28,7 +28,7 @@ if __name__ == "__main__":
     restaurants = Restaurant.all()
     print("FOUND", len(restaurants), "RESTAURANTS")
     if any(restaurants):
-        for restaurant in restaurants:
-            print(restaurant.name, restaurant.cuisine, restaurant.star_rating, restaurant.neighborhood)
+        for restaurants in restaurants:
+            print(restaurants.name, restaurants.cuisine, restaurants.star_rating, restaurants.neighborhood)
     else:
-        Restaurant.seed()
+        Restaurants.seed()
