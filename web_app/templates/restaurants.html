@@ -13,7 +13,7 @@
         <!--div class="container"-->
         <ol>
             {% for restaurants in restaurants %}
-                <li>{{ restaurants.title }} | {{ restaurants.author }}</li>
+                <li>{{ restaurants.name }} | {{ restaurants.cuisine }} | {{ restaurants.star_rating }} | {{ restaurants.neighborhood }}</li>
             {% endfor %}
         </ol>
         <!--/div-->
