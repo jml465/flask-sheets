@@ -1,0 +1,29 @@
+# code template from s2t2 Customizations #9. Credit: Prof. Rossetti
+
+{% extends "bootstrap_5_layout.html" %}
+{% set page_title = "Restaurants Page" %}
+{% set active_page = "restaurants" %}
+
+{% block content %}
+
+    <h1>Restaurants</h1>
+
+    <p class="lead">This is the restaurants page</p>
+
+    {% if restaurants|length > 0 %}
+
+        <!--div class="container"-->
+        <ol>
+            {% for restaurant in restaurants %}
+                <li>{{ restaurants.title }} | {{ restaurants.author }}</li>
+            {% endfor %}
+        </ol>
+        <!--/div-->
+
+    {% else %}
+
+        <p>Oops, no restaurants found.</p>
+
+    {% endif %}
+
+{% endblock %}
