@@ -1,4 +1,3 @@
-# code template from s2t2 Customizations #9. Credit: Prof. Rossetti
 from pprint import pprint
 from app.db import BaseModel
 
@@ -9,7 +8,7 @@ class Restaurants(BaseModel):
     COLUMNS = ["name", "cuisine", "star_rating", "neighborhood"]
 
     SEEDS = [
-        {'name': 'La Grande Boucherie', 'cuisine': 'French', 'star_rating': '4', 'neighborhood': 'Downtown'},
+        {"name": "La Grande Boucherie", "cuisine": "French", "star_rating": "4", "neighborhood": "Downtown"},
         {"name": "Jont", "cuisine": "French/Japanese", "star_rating": "5", "neighborhood": "U Street Corridor"},
         {"name": "Oyamel", "cuisine": "Meixcan", "star_rating": "4.5", "neighborhood": "Penn Quarter"},
         {"name": "Filomena", "cuisine": "Italian", "star_rating": "4.8", "neighborhood": "Georgetown"},
@@ -29,7 +28,7 @@ if __name__ == "__main__":
     restaurants = Restaurants.all()
     print("FOUND", len(restaurants), "RESTAURANTS")
     if any(restaurants):
-        for restaurant in restaurants:
+        for restaurants in restaurants:
             print(restaurants.name, restaurants.cuisine, restaurants.star_rating, restaurants.neighborhood)
     else:
         Restaurants.seed()
