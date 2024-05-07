@@ -25,7 +25,7 @@ class Restaurants(BaseModel):
 
 if __name__ == "__main__":
 
-    restaurants = Restaurants.all()
+    restaurants = Restaurant.all()
     print("FOUND", len(restaurants), "RESTAURANTS")
     if any(restaurants):
         for restaurant in restaurants:
